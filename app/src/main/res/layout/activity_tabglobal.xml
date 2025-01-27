@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagebck">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tv_leaderboard_global"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Global Leaderboard"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Trophy Icon -->
+    <ImageView
+        android:id="@+id/iv_trophy_global"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/champion"
+        android:layout_below="@id/tv_leaderboard_global"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <!-- Leaderboard Table -->
+    <LinearLayout
+        android:id="@+id/leaderboard_container_global"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_trophy_global"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginHorizontal="16dp">
+
+        <!-- Header Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#14710F"
+                android:textSize="16sp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Player"
+                android:textStyle="bold"
+                android:textColor="#14710F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score"
+                android:textColor="#14710F"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Rank Footer -->
+    <TextView
+        android:id="@+id/tv_rank_global"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#14710F"
+        android:text="70     Your Rank     3"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp" />
+
+</RelativeLayout>

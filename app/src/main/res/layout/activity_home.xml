@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@drawable/imagebck"
+    tools:context=".StartActivity">
+
+    <ImageView
+        android:id="@+id/btnProfile"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/foto"
+        android:layout_gravity="start"
+        android:contentDescription="Back Button" />
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/adlam_display"
+        android:gravity="center"
+        android:text="ANIMAL \n EDUCATIONAL \n GAMES"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Paw Image -->
+    <ImageView
+        android:id="@+id/pawImage"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:src="@drawable/foot"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="3dp"/>
+
+    <!-- Button Group (Buttons under the paw image) -->
+    <LinearLayout
+        android:id="@+id/buttonGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginBottom="0dp">
+
+        <!-- PlayGame Button -->
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:text="Play Game"
+            android:fontFamily="@font/adlam_display"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#0F963E"/>
+
+        <!-- Library Button-->
+        <Button
+            android:id="@+id/libraryButton"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="10dp"
+            android:text="Library"
+            android:fontFamily="@font/adlam_display"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#0F963E"
+            android:drawablePadding="10dp" />
+
+        <!-- Laderboard Button-->
+        <Button
+            android:id="@+id/laderboardButton"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="10dp"
+            android:text="Laderboard"
+            android:fontFamily="@font/adlam_display"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#0F963E"
+            android:drawablePadding="10dp" />
+
+        <!-- MakerApplication Button-->
+        <Button
+            android:id="@+id/profileButton"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="10dp"
+            android:text="Maker Application"
+            android:fontFamily="@font/adlam_display"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#0F963E"
+            android:drawablePadding="10dp" />
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="10dp"
+            android:text="Log Out"
+            android:fontFamily="@font/adlam_display"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#F61010"
+            android:drawablePadding="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
